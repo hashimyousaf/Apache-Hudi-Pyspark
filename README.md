@@ -15,7 +15,11 @@ As we all know actualy implementation of the solution is in Scala. But when we g
 ### Data Generation
 You can also set up data generation to mock the data pipeline flow. But you have to set up this data generator in your local machine or you can also set up any Ec2 instance. Data generator will put data into your raw data buckets and one can also setup cron schedule to run this data generation without any manual intervention. 
 #### Path of Data Generator : https://github.com/hashimyousaf/Apache-Hudi-Pyspark/blob/master/SampleDataLake/DataGeneration/
-  
+
+## Data Flow Diagram
+![](training_data_lake_design.jpeg)
+
+
 ### Apache-Hudi on AWS EMR
 And if you are running it on AWS EMR, there is also some jars uploaded in the repo, you can use to set it up and make it runable on AWS EMR.
 
