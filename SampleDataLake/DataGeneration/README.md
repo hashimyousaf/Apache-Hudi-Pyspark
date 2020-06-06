@@ -1,9 +1,4 @@
-# QA - Test Data Generator
-
-
-###Author: Usman Zahid
-
-###Developed by: Usman Zahid & Adil Qayyum
+# Data Generator
 
 This utility helps you to generate a large volume of test data in CSV, JSON and XML format based on the given configuration. We can set up the configurations file with the detail relating to the table MetaData in 'config' JSON file by providing the column names and the provider types for each column for a particular table.
 
