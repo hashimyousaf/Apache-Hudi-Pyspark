@@ -1,0 +1,1195 @@
+
+
+Container: container_1587544594037_0027_01_000001 on ip-172-31-86-193.ec2.internal_8041
+=========================================================================================
+LogType:stderr
+Log Upload Time:Wed Apr 22 15:46:52 +0000 2020
+LogLength:85681
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt1/yarn/usercache/hadoop/filecache/341/__spark_libs__9208895924151612466.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+20/04/22 15:46:21 INFO SignalUtils: Registered signal handler for TERM
+20/04/22 15:46:21 INFO SignalUtils: Registered signal handler for HUP
+20/04/22 15:46:21 INFO SignalUtils: Registered signal handler for INT
+20/04/22 15:46:22 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/04/22 15:46:22 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/04/22 15:46:22 INFO SecurityManager: Changing view acls groups to: 
+20/04/22 15:46:22 INFO SecurityManager: Changing modify acls groups to: 
+20/04/22 15:46:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/04/22 15:46:22 INFO ApplicationMaster: Preparing Local resources
+20/04/22 15:46:23 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1587544594037_0027_000001
+20/04/22 15:46:23 INFO ApplicationMaster: Starting the user application in a separate Thread
+20/04/22 15:46:23 INFO ApplicationMaster: Waiting for spark context initialization...
+20/04/22 15:46:24 INFO SparkContext: Running Spark version 2.4.4
+20/04/22 15:46:24 INFO SparkContext: Submitted application: hudi_app
+20/04/22 15:46:24 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/04/22 15:46:24 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/04/22 15:46:24 INFO SecurityManager: Changing view acls groups to: 
+20/04/22 15:46:24 INFO SecurityManager: Changing modify acls groups to: 
+20/04/22 15:46:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/04/22 15:46:24 INFO Utils: Successfully started service 'sparkDriver' on port 46011.
+20/04/22 15:46:24 INFO SparkEnv: Registering MapOutputTracker
+20/04/22 15:46:24 INFO SparkEnv: Registering BlockManagerMaster
+20/04/22 15:46:24 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/04/22 15:46:24 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/04/22 15:46:24 INFO DiskBlockManager: Created local directory at /mnt1/yarn/usercache/hadoop/appcache/application_1587544594037_0027/blockmgr-ae26ae9b-ed54-483f-b821-8143aac4999b
+20/04/22 15:46:24 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1587544594037_0027/blockmgr-319c1712-cab1-4de2-8268-a2753deba9d9
+20/04/22 15:46:24 INFO MemoryStore: MemoryStore started with capacity 1028.8 MB
+20/04/22 15:46:24 INFO SparkEnv: Registering OutputCommitCoordinator
+20/04/22 15:46:24 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+20/04/22 15:46:24 INFO Utils: Successfully started service 'SparkUI' on port 43319.
+20/04/22 15:46:25 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-172-31-86-193.ec2.internal:43319
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/commons-codec_commons-codec-1.11.jar at s3://air-product-training-datalake/hashim-yousaf/jars/commons-codec_commons-codec-1.11.jar with timestamp 1587570385077
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.hudi_hudi-spark-bundle_2.11-0.5.1-incubating.jar at s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.hudi_hudi-spark-bundle_2.11-0.5.1-incubating.jar with timestamp 1587570385078
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/commons-logging_commons-logging-1.2.jar at s3://air-product-training-datalake/hashim-yousaf/jars/commons-logging_commons-logging-1.2.jar with timestamp 1587570385078
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.httpcomponents_httpclient-4.5.9.jar at s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.httpcomponents_httpclient-4.5.9.jar with timestamp 1587570385078
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.httpcomponents_httpcore-4.4.11.jar at s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.httpcomponents_httpcore-4.4.11.jar with timestamp 1587570385078
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.spark_spark-avro_2.11-2.4.4.jar at s3://air-product-training-datalake/hashim-yousaf/jars/org.apache.spark_spark-avro_2.11-2.4.4.jar with timestamp 1587570385079
+20/04/22 15:46:25 INFO SparkContext: Added JAR s3://air-product-training-datalake/hashim-yousaf/jars/org.spark-project.spark_unused-1.0.0.jar at s3://air-product-training-datalake/hashim-yousaf/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1587570385079
+20/04/22 15:46:25 INFO YarnClusterScheduler: Created YarnClusterScheduler
+20/04/22 15:46:25 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1587544594037_0027 and attemptId Some(appattempt_1587544594037_0027_000001)
+20/04/22 15:46:25 INFO Utils: Using initial executors = 100, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+20/04/22 15:46:25 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43479.
+20/04/22 15:46:25 INFO NettyBlockTransferService: Server created on ip-172-31-86-193.ec2.internal:43479
+20/04/22 15:46:25 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/04/22 15:46:25 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-172-31-86-193.ec2.internal, 43479, None)
+20/04/22 15:46:25 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-86-193.ec2.internal:43479 with 1028.8 MB RAM, BlockManagerId(driver, ip-172-31-86-193.ec2.internal, 43479, None)
+20/04/22 15:46:25 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-172-31-86-193.ec2.internal, 43479, None)
+20/04/22 15:46:25 INFO BlockManager: external shuffle service port = 7337
+20/04/22 15:46:25 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-172-31-86-193.ec2.internal, 43479, None)
+20/04/22 15:46:25 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+20/04/22 15:46:25 INFO EventLoggingListener: Logging events to hdfs:/var/log/spark/apps/application_1587544594037_0027_1
+20/04/22 15:46:25 INFO Utils: Using initial executors = 100, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+20/04/22 15:46:25 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+20/04/22 15:46:25 INFO RMProxy: Connecting to ResourceManager at ip-172-31-86-193.ec2.internal/172.31.86.193:8030
+20/04/22 15:46:26 INFO YarnRMClient: Registering the ApplicationMaster
+20/04/22 15:46:26 INFO ApplicationMaster: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/kinesis/lib/emr-kinesis-hadoop.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/kinesis/lib/emr-kinesis-hadoop.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>{{PWD}}/__spark_conf__/__hadoop_conf__
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-86-193.ec2.internal:8020/user/hadoop/.sparkStaging/application_1587544594037_0027
+    SPARK_USER -> hadoop
+    PYTHONPATH -> {{PWD}}/pyspark.zip<CPS>{{PWD}}/py4j-0.10.7-src.zip
+    SPARK_PUBLIC_DNS -> ip-172-31-86-193.ec2.internal
+
+  command:
+    LD_LIBRARY_PATH=\"/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH\" \ 
+      {{JAVA_HOME}}/bin/java \ 
+      -server \ 
+      -Xmx4743m \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:+UseConcMarkSweepGC' \ 
+      '-XX:CMSInitiatingOccupancyFraction=70' \ 
+      '-XX:MaxHeapFreeRatio=70' \ 
+      '-XX:+CMSClassUnloadingEnabled' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      -Djava.io.tmpdir={{PWD}}/tmp \ 
+      '-Dspark.port.maxRetries=40' \ 
+      '-Dspark.history.ui.port=18080' \ 
+      '-Dspark.ui.port=0' \ 
+      '-Dspark.driver.port=46011' \ 
+      -Dspark.yarn.app.container.log.dir=<LOG_DIR> \ 
+      org.apache.spark.executor.CoarseGrainedExecutorBackend \ 
+      --driver-url \ 
+      spark://CoarseGrainedScheduler@ip-172-31-86-193.ec2.internal:46011 \ 
+      --executor-id \ 
+      <executorId> \ 
+      --hostname \ 
+      <hostname> \ 
+      --cores \ 
+      2 \ 
+      --app-id \ 
+      application_1587544594037_0027 \ 
+      --user-class-path \ 
+      file:$PWD/__app__.jar \ 
+      --user-class-path \ 
+      file:$PWD/commons-codec_commons-codec-1.11.jar \ 
+      --user-class-path \ 
+      file:$PWD/org.apache.hudi_hudi-spark-bundle_2.11-0.5.1-incubating.jar \ 
+      --user-class-path \ 
+      file:$PWD/commons-logging_commons-logging-1.2.jar \ 
+      --user-class-path \ 
+      file:$PWD/org.apache.httpcomponents_httpclient-4.5.9.jar \ 
+      --user-class-path \ 
+      file:$PWD/org.apache.httpcomponents_httpcore-4.4.11.jar \ 
+      --user-class-path \ 
+      file:$PWD/org.apache.spark_spark-avro_2.11-2.4.4.jar \ 
+      --user-class-path \ 
+      file:$PWD/org.spark-project.spark_unused-1.0.0.jar \ 
+      1><LOG_DIR>/stdout \ 
+      2><LOG_DIR>/stderr
+
+  resources:
+    org.apache.httpcomponents_httpclient-4.5.9.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/org.apache.httpcomponents_httpclient-4.5.9.jar" } size: 774384 timestamp: 1587570377456 type: FILE visibility: PRIVATE
+    org.apache.hudi_hudi-spark-bundle_2.11-0.5.1-incubating.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/org.apache.hudi_hudi-spark-bundle_2.11-0.5.1-incubating.jar" } size: 21076336 timestamp: 1587570377302 type: FILE visibility: PRIVATE
+    __spark_conf__ -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/__spark_conf__.zip" } size: 243439 timestamp: 1587570378670 type: ARCHIVE visibility: PRIVATE
+    commons-logging_commons-logging-1.2.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/commons-logging_commons-logging-1.2.jar" } size: 61829 timestamp: 1587570377380 type: FILE visibility: PRIVATE
+    org.apache.httpcomponents_httpcore-4.4.11.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/org.apache.httpcomponents_httpcore-4.4.11.jar" } size: 326874 timestamp: 1587570377526 type: FILE visibility: PRIVATE
+    org.apache.spark_spark-avro_2.11-2.4.4.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/org.apache.spark_spark-avro_2.11-2.4.4.jar" } size: 187318 timestamp: 1587570377615 type: FILE visibility: PRIVATE
+    pyspark.zip -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/pyspark.zip" } size: 594786 timestamp: 1587570378542 type: FILE visibility: PRIVATE
+    org.spark-project.spark_unused-1.0.0.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/org.spark-project.spark_unused-1.0.0.jar" } size: 2777 timestamp: 1587570378096 type: FILE visibility: PRIVATE
+    __spark_libs__ -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/__spark_libs__9208895924151612466.zip" } size: 230327364 timestamp: 1587570376758 type: ARCHIVE visibility: PRIVATE
+    hive-site.xml -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/hive-site.xml" } size: 2132 timestamp: 1587570378113 type: FILE visibility: PRIVATE
+    commons-codec_commons-codec-1.11.jar -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/commons-codec_commons-codec-1.11.jar" } size: 335042 timestamp: 1587570376923 type: FILE visibility: PRIVATE
+    py4j-0.10.7-src.zip -> resource { scheme: "hdfs" host: "ip-172-31-86-193.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1587544594037_0027/py4j-0.10.7-src.zip" } size: 42437 timestamp: 1587570378555 type: FILE visibility: PRIVATE
+
+===============================================================================
+20/04/22 15:46:26 INFO Utils: Using initial executors = 100, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+20/04/22 15:46:26 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@ip-172-31-86-193.ec2.internal:46011)
+20/04/22 15:46:26 INFO YarnAllocator: Will request 100 executor container(s), each with 2 core(s) and 5632 MB memory (including 889 MB of overhead)
+20/04/22 15:46:26 INFO YarnAllocator: Submitted 100 unlocalized container requests.
+20/04/22 15:46:26 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 3000, initial allocation : 200) intervals
+20/04/22 15:46:26 INFO YarnClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/04/22 15:46:26 INFO YarnClusterScheduler: YarnClusterScheduler.postStartHook done
+20/04/22 15:46:26 INFO SharedState: loading hive config file: file:/mnt1/yarn/usercache/hadoop/appcache/application_1587544594037_0027/container_1587544594037_0027_01_000001/hive-site.xml
+20/04/22 15:46:26 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('hdfs:///user/spark/warehouse').
+20/04/22 15:46:26 INFO SharedState: Warehouse path is 'hdfs:///user/spark/warehouse'.
+20/04/22 15:46:26 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+20/04/22 15:46:26 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+20/04/22 15:46:26 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+20/04/22 15:46:26 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+20/04/22 15:46:26 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+20/04/22 15:46:26 INFO AMRMClientImpl: Received new token for : ip-172-31-86-193.ec2.internal:8041
+20/04/22 15:46:26 INFO YarnAllocator: Launching container container_1587544594037_0027_01_000002 on host ip-172-31-86-193.ec2.internal for executor with ID 1
+20/04/22 15:46:26 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+20/04/22 15:46:26 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+20/04/22 15:46:27 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+20/04/22 15:46:28 INFO ClientConfigurationFactory: Set initial getObject socket timeout to 2000 ms.
+20/04/22 15:46:30 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.86.193:55344) with ID 1
+20/04/22 15:46:30 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 1)
+20/04/22 15:46:30 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-86-193.ec2.internal:39605 with 2.6 GB RAM, BlockManagerId(1, ip-172-31-86-193.ec2.internal, 39605, None)
+20/04/22 15:46:34 INFO FileSourceStrategy: Pruning directories with: 
+20/04/22 15:46:34 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+20/04/22 15:46:34 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+20/04/22 15:46:34 INFO FileSourceScanExec: Pushed Filters: 
+20/04/22 15:46:34 INFO CodeGenerator: Code generated in 330.732449 ms
+20/04/22 15:46:34 INFO CodeGenerator: Code generated in 24.042925 ms
+20/04/22 15:46:34 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 397.8 KB, free 1028.5 MB)
+20/04/22 15:46:35 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 39.1 KB, free 1028.4 MB)
+20/04/22 15:46:35 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 39.1 KB, free: 1028.8 MB)
+20/04/22 15:46:35 INFO SparkContext: Created broadcast 0 from load at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:35 INFO GPLNativeCodeLoader: Loaded native gpl library
+20/04/22 15:46:35 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 5f788d5e8f90539ee331702c753fa250727128f4]
+20/04/22 15:46:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194409 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 2, prefetch: false
+20/04/22 15:46:35 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: ArrayBuffer((1 fileSplits,2))
+20/04/22 15:46:35 INFO SparkContext: Starting job: load at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:35 INFO DAGScheduler: Got job 0 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/04/22 15:46:35 INFO DAGScheduler: Final stage: ResultStage 0 (load at NativeMethodAccessorImpl.java:0)
+20/04/22 15:46:35 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:35 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:35 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/04/22 15:46:35 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.8 KB, free 1028.4 MB)
+20/04/22 15:46:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.6 KB, free 1028.4 MB)
+20/04/22 15:46:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 4.6 KB, free: 1028.8 MB)
+20/04/22 15:46:35 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:35 INFO YarnClusterScheduler: Adding task set 0.0 with 1 tasks
+20/04/22 15:46:35 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, ip-172-31-86-193.ec2.internal, executor 1, partition 0, RACK_LOCAL, 8278 bytes)
+20/04/22 15:46:35 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+20/04/22 15:46:35 INFO YarnAllocator: Canceling requests for 99 executor container(s) to have a new desired total 1 executors.
+20/04/22 15:46:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 4.6 KB, free: 2.6 GB)
+20/04/22 15:46:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 39.1 KB, free: 2.6 GB)
+20/04/22 15:46:37 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1898 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:37 INFO YarnClusterScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/04/22 15:46:37 INFO DAGScheduler: ResultStage 0 (load at NativeMethodAccessorImpl.java:0) finished in 2.025 s
+20/04/22 15:46:37 INFO DAGScheduler: Job 0 finished: load at NativeMethodAccessorImpl.java:0, took 2.083682 s
+20/04/22 15:46:37 INFO FileSourceStrategy: Pruning directories with: 
+20/04/22 15:46:37 INFO FileSourceStrategy: Post-Scan Filters: 
+20/04/22 15:46:37 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+20/04/22 15:46:37 INFO FileSourceScanExec: Pushed Filters: 
+20/04/22 15:46:37 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+20/04/22 15:46:37 INFO CodeGenerator: Code generated in 17.823315 ms
+20/04/22 15:46:37 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 4.6 KB, free: 2.6 GB)
+20/04/22 15:46:37 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 4.6 KB, free: 1028.8 MB)
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 397.8 KB, free 1028.0 MB)
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 39.1 KB, free 1028.0 MB)
+20/04/22 15:46:37 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 39.1 KB, free: 1028.8 MB)
+20/04/22 15:46:37 INFO SparkContext: Created broadcast 2 from load at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:37 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194409 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 2, prefetch: false
+20/04/22 15:46:37 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: ArrayBuffer((1 fileSplits,2))
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 20
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 8
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 7
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 9
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 18
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 14
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 26
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 22
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 13
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 23
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 24
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 12
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 28
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 15
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 25
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 17
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 29
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 27
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 10
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 19
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 31
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 21
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 30
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 16
+20/04/22 15:46:37 INFO ContextCleaner: Cleaned accumulator 11
+20/04/22 15:46:37 INFO FileSourceStrategy: Pruning directories with: 
+20/04/22 15:46:37 INFO FileSourceStrategy: Post-Scan Filters: 
+20/04/22 15:46:37 INFO FileSourceStrategy: Output Data Schema: struct<sales_id: string, customer_id: string, product_name: string, price: string, updated_at: string ... 3 more fields>
+20/04/22 15:46:37 INFO FileSourceScanExec: Pushed Filters: 
+20/04/22 15:46:37 INFO CodeGenerator: Code generated in 17.571527 ms
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 397.8 KB, free 1027.6 MB)
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 39.1 KB, free 1027.6 MB)
+20/04/22 15:46:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 39.1 KB, free: 1028.7 MB)
+20/04/22 15:46:37 INFO SparkContext: Created broadcast 3 from showString at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:37 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: false
+20/04/22 15:46:37 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: ArrayBuffer((1 fileSplits,1))
+20/04/22 15:46:37 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:37 INFO DAGScheduler: Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/04/22 15:46:37 INFO DAGScheduler: Final stage: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0)
+20/04/22 15:46:37 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:37 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:37 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[12] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.2 KB, free 1027.6 MB)
+20/04/22 15:46:37 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.6 KB, free 1027.6 MB)
+20/04/22 15:46:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 5.6 KB, free: 1028.7 MB)
+20/04/22 15:46:38 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[12] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:38 INFO YarnClusterScheduler: Adding task set 1.0 with 1 tasks
+20/04/22 15:46:38 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, ip-172-31-86-193.ec2.internal, executor 1, partition 0, RACK_LOCAL, 8278 bytes)
+20/04/22 15:46:38 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 5.6 KB, free: 2.6 GB)
+20/04/22 15:46:38 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 39.1 KB, free: 2.6 GB)
+20/04/22 15:46:38 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 377 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:38 INFO YarnClusterScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/04/22 15:46:38 INFO DAGScheduler: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 0.397 s
+20/04/22 15:46:38 INFO DAGScheduler: Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 0.405734 s
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 43
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 46
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 53
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 56
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 45
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 38
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 42
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 65
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 58
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 60
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 63
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 49
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 48
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 47
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 64
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 57
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 40
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 39
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 59
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 44
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 41
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 51
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 54
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 50
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 66
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 52
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 37
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 62
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 61
+20/04/22 15:46:38 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 5.6 KB, free: 1028.7 MB)
+20/04/22 15:46:38 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 5.6 KB, free: 2.6 GB)
+20/04/22 15:46:38 INFO ContextCleaner: Cleaned accumulator 55
+20/04/22 15:46:38 INFO BlockManagerInfo: Removed broadcast_3_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 39.1 KB, free: 1028.8 MB)
+20/04/22 15:46:38 INFO BlockManagerInfo: Removed broadcast_3_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 39.1 KB, free: 2.6 GB)
+20/04/22 15:46:38 INFO FileSourceStrategy: Pruning directories with: 
+20/04/22 15:46:38 INFO FileSourceStrategy: Post-Scan Filters: 
+20/04/22 15:46:38 INFO FileSourceStrategy: Output Data Schema: struct<sales_id: string, customer_id: string, product_name: string, price: string, updated_at: string ... 3 more fields>
+20/04/22 15:46:38 INFO FileSourceScanExec: Pushed Filters: 
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 397.8 KB, free 1027.6 MB)
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 39.1 KB, free 1027.6 MB)
+20/04/22 15:46:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 39.1 KB, free: 1028.7 MB)
+20/04/22 15:46:39 INFO SparkContext: Created broadcast 5 from toRdd at AvroConversionUtils.scala:43
+20/04/22 15:46:39 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: false
+20/04/22 15:46:39 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: ArrayBuffer((1 fileSplits,1))
+20/04/22 15:46:39 INFO SparkContext: Starting job: isEmpty at HoodieSparkSqlWriter.scala:141
+20/04/22 15:46:39 INFO DAGScheduler: Got job 2 (isEmpty at HoodieSparkSqlWriter.scala:141) with 1 output partitions
+20/04/22 15:46:39 INFO DAGScheduler: Final stage: ResultStage 2 (isEmpty at HoodieSparkSqlWriter.scala:141)
+20/04/22 15:46:39 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:39 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:39 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[17] at map at HoodieSparkSqlWriter.scala:99), which has no missing parents
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 17.5 KB, free 1027.6 MB)
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 8.7 KB, free 1027.5 MB)
+20/04/22 15:46:39 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 8.7 KB, free: 1028.7 MB)
+20/04/22 15:46:39 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[17] at map at HoodieSparkSqlWriter.scala:99) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:39 INFO YarnClusterScheduler: Adding task set 2.0 with 1 tasks
+20/04/22 15:46:39 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, ip-172-31-86-193.ec2.internal, executor 1, partition 0, RACK_LOCAL, 8278 bytes)
+20/04/22 15:46:39 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 8.7 KB, free: 2.6 GB)
+20/04/22 15:46:39 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 39.1 KB, free: 2.6 GB)
+20/04/22 15:46:40 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 1758 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:40 INFO YarnClusterScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+20/04/22 15:46:40 INFO DAGScheduler: ResultStage 2 (isEmpty at HoodieSparkSqlWriter.scala:141) finished in 1.774 s
+20/04/22 15:46:40 INFO DAGScheduler: Job 2 finished: isEmpty at HoodieSparkSqlWriter.scala:141, took 1.777803 s
+20/04/22 15:46:41 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:41 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:41 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 72
+20/04/22 15:46:41 INFO BlockManagerInfo: Removed broadcast_6_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 8.7 KB, free: 1028.7 MB)
+20/04/22 15:46:41 INFO BlockManagerInfo: Removed broadcast_6_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 8.7 KB, free: 2.6 GB)
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 77
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 75
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 78
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 91
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 82
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 93
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 94
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 89
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 74
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 79
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 88
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 95
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 90
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 84
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 85
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 83
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 80
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 92
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 87
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 86
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 81
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 73
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 76
+20/04/22 15:46:41 INFO ContextCleaner: Cleaned accumulator 96
+20/04/22 15:46:41 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:42 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.commit.requested
+20/04/22 15:46:42 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:42 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:42 INFO SparkContext: Starting job: countByKey at WorkloadProfile.java:67
+20/04/22 15:46:42 INFO DAGScheduler: Registering RDD 19 (countByKey at WorkloadProfile.java:67)
+20/04/22 15:46:42 INFO DAGScheduler: Got job 3 (countByKey at WorkloadProfile.java:67) with 1 output partitions
+20/04/22 15:46:42 INFO DAGScheduler: Final stage: ResultStage 4 (countByKey at WorkloadProfile.java:67)
+20/04/22 15:46:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+20/04/22 15:46:42 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+20/04/22 15:46:42 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[19] at countByKey at WorkloadProfile.java:67), which has no missing parents
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 19.8 KB, free 1027.6 MB)
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 9.9 KB, free 1027.5 MB)
+20/04/22 15:46:42 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 9.9 KB, free: 1028.7 MB)
+20/04/22 15:46:42 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:42 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[19] at countByKey at WorkloadProfile.java:67) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:42 INFO YarnClusterScheduler: Adding task set 3.0 with 1 tasks
+20/04/22 15:46:42 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, ip-172-31-86-193.ec2.internal, executor 1, partition 0, RACK_LOCAL, 8267 bytes)
+20/04/22 15:46:42 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 9.9 KB, free: 2.6 GB)
+20/04/22 15:46:42 INFO BlockManagerInfo: Added rdd_17_0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 222.0 B, free: 2.6 GB)
+20/04/22 15:46:42 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 287 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:42 INFO YarnClusterScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+20/04/22 15:46:42 INFO DAGScheduler: ShuffleMapStage 3 (countByKey at WorkloadProfile.java:67) finished in 0.303 s
+20/04/22 15:46:42 INFO DAGScheduler: looking for newly runnable stages
+20/04/22 15:46:42 INFO DAGScheduler: running: Set()
+20/04/22 15:46:42 INFO DAGScheduler: waiting: Set(ResultStage 4)
+20/04/22 15:46:42 INFO DAGScheduler: failed: Set()
+20/04/22 15:46:42 INFO DAGScheduler: Submitting ResultStage 4 (ShuffledRDD[20] at countByKey at WorkloadProfile.java:67), which has no missing parents
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 3.6 KB, free 1027.5 MB)
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.1 KB, free 1027.5 MB)
+20/04/22 15:46:42 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 2.1 KB, free: 1028.7 MB)
+20/04/22 15:46:42 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (ShuffledRDD[20] at countByKey at WorkloadProfile.java:67) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:42 INFO YarnClusterScheduler: Adding task set 4.0 with 1 tasks
+20/04/22 15:46:42 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, ip-172-31-86-193.ec2.internal, executor 1, partition 0, NODE_LOCAL, 7651 bytes)
+20/04/22 15:46:42 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 2.1 KB, free: 2.6 GB)
+20/04/22 15:46:42 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.86.193:55344
+20/04/22 15:46:42 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 95 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:42 INFO YarnClusterScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+20/04/22 15:46:42 INFO DAGScheduler: ResultStage 4 (countByKey at WorkloadProfile.java:67) finished in 0.103 s
+20/04/22 15:46:42 INFO DAGScheduler: Job 3 finished: countByKey at WorkloadProfile.java:67, took 0.445753 s
+20/04/22 15:46:43 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.inflight
+20/04/22 15:46:43 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154312.commit' for reading
+20/04/22 15:46:43 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 107
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 112
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 111
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 98
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 114
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 106
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 113
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 101
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 136
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 102
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 126
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 110
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 119
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 99
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 131
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 97
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 138
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 130
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 104
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 118
+20/04/22 15:46:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 9.9 KB, free: 1028.7 MB)
+20/04/22 15:46:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 9.9 KB, free: 2.6 GB)
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 109
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 124
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 142
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 140
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned shuffle 0
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 116
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 105
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 103
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 139
+20/04/22 15:46:43 INFO BlockManagerInfo: Removed broadcast_8_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 2.1 KB, free: 2.6 GB)
+20/04/22 15:46:43 INFO BlockManagerInfo: Removed broadcast_8_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 2.1 KB, free: 1028.7 MB)
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 145
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 120
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 123
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 121
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 133
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 115
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 135
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 134
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 146
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 108
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 100
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 127
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 144
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 122
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 117
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 129
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 132
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 143
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 125
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 141
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 137
+20/04/22 15:46:43 INFO ContextCleaner: Cleaned accumulator 128
+20/04/22 15:46:43 INFO SparkContext: Starting job: count at HoodieSparkSqlWriter.scala:255
+20/04/22 15:46:43 INFO DAGScheduler: Registering RDD 21 (mapToPair at HoodieWriteClient.java:492)
+20/04/22 15:46:43 INFO DAGScheduler: Got job 4 (count at HoodieSparkSqlWriter.scala:255) with 1 output partitions
+20/04/22 15:46:43 INFO DAGScheduler: Final stage: ResultStage 6 (count at HoodieSparkSqlWriter.scala:255)
+20/04/22 15:46:43 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+20/04/22 15:46:43 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 5)
+20/04/22 15:46:43 INFO DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[21] at mapToPair at HoodieWriteClient.java:492), which has no missing parents
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 274.0 KB, free 1027.3 MB)
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 84.6 KB, free 1027.2 MB)
+20/04/22 15:46:43 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 84.6 KB, free: 1028.7 MB)
+20/04/22 15:46:43 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:43 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[21] at mapToPair at HoodieWriteClient.java:492) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:43 INFO YarnClusterScheduler: Adding task set 5.0 with 1 tasks
+20/04/22 15:46:43 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 8267 bytes)
+20/04/22 15:46:43 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 84.6 KB, free: 2.6 GB)
+20/04/22 15:46:43 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 196 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:43 INFO YarnClusterScheduler: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+20/04/22 15:46:43 INFO DAGScheduler: ShuffleMapStage 5 (mapToPair at HoodieWriteClient.java:492) finished in 0.245 s
+20/04/22 15:46:43 INFO DAGScheduler: looking for newly runnable stages
+20/04/22 15:46:43 INFO DAGScheduler: running: Set()
+20/04/22 15:46:43 INFO DAGScheduler: waiting: Set(ResultStage 6)
+20/04/22 15:46:43 INFO DAGScheduler: failed: Set()
+20/04/22 15:46:43 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[26] at filter at HoodieSparkSqlWriter.scala:255), which has no missing parents
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 261.9 KB, free 1027.0 MB)
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 78.8 KB, free 1026.9 MB)
+20/04/22 15:46:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 78.8 KB, free: 1028.6 MB)
+20/04/22 15:46:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[26] at filter at HoodieSparkSqlWriter.scala:255) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:43 INFO YarnClusterScheduler: Adding task set 6.0 with 1 tasks
+20/04/22 15:46:43 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, ip-172-31-86-193.ec2.internal, executor 1, partition 0, NODE_LOCAL, 7651 bytes)
+20/04/22 15:46:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 78.8 KB, free: 2.6 GB)
+20/04/22 15:46:44 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.31.86.193:55344
+20/04/22 15:46:46 INFO BlockManagerInfo: Added rdd_25_0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 293.0 B, free: 2.6 GB)
+20/04/22 15:46:46 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 2084 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:46 INFO YarnClusterScheduler: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+20/04/22 15:46:46 INFO DAGScheduler: ResultStage 6 (count at HoodieSparkSqlWriter.scala:255) finished in 2.124 s
+20/04/22 15:46:46 INFO DAGScheduler: Job 4 finished: count at HoodieSparkSqlWriter.scala:255, took 2.376284 s
+20/04/22 15:46:46 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:46 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:46 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:46 INFO SparkContext: Starting job: collect at AbstractHoodieWriteClient.java:139
+20/04/22 15:46:46 INFO DAGScheduler: Got job 5 (collect at AbstractHoodieWriteClient.java:139) with 1 output partitions
+20/04/22 15:46:46 INFO DAGScheduler: Final stage: ResultStage 8 (collect at AbstractHoodieWriteClient.java:139)
+20/04/22 15:46:46 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+20/04/22 15:46:46 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:46 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[27] at map at AbstractHoodieWriteClient.java:139), which has no missing parents
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 168
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 185
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 180
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 174
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 152
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 166
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 162
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 165
+20/04/22 15:46:46 INFO BlockManagerInfo: Removed broadcast_9_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 84.6 KB, free: 1028.7 MB)
+20/04/22 15:46:46 INFO BlockManagerInfo: Removed broadcast_9_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 84.6 KB, free: 2.6 GB)
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 161
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 170
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 195
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 155
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 176
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 190
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 184
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 159
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 167
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 154
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 158
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 160
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 194
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 192
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 156
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 177
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 193
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 181
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 187
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 147
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 157
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 183
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 191
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 150
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 189
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 196
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 153
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 173
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 172
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 171
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 186
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 169
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 163
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 178
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 149
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 188
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 164
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 148
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 175
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 179
+20/04/22 15:46:46 INFO BlockManagerInfo: Removed broadcast_10_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 78.8 KB, free: 2.6 GB)
+20/04/22 15:46:46 INFO BlockManagerInfo: Removed broadcast_10_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 78.8 KB, free: 1028.7 MB)
+20/04/22 15:46:46 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 262.1 KB, free 1027.3 MB)
+20/04/22 15:46:46 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 78.9 KB, free 1027.2 MB)
+20/04/22 15:46:46 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 78.9 KB, free: 1028.7 MB)
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 151
+20/04/22 15:46:46 INFO ContextCleaner: Cleaned accumulator 182
+20/04/22 15:46:46 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[27] at map at AbstractHoodieWriteClient.java:139) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:46 INFO YarnClusterScheduler: Adding task set 8.0 with 1 tasks
+20/04/22 15:46:46 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 7, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 7651 bytes)
+20/04/22 15:46:46 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 78.9 KB, free: 2.6 GB)
+20/04/22 15:46:46 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 7) in 42 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:46 INFO YarnClusterScheduler: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+20/04/22 15:46:46 INFO DAGScheduler: ResultStage 8 (collect at AbstractHoodieWriteClient.java:139) finished in 0.080 s
+20/04/22 15:46:46 INFO DAGScheduler: Job 5 finished: collect at AbstractHoodieWriteClient.java:139, took 0.099434 s
+20/04/22 15:46:46 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:46 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:47 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154312.commit' for reading
+20/04/22 15:46:47 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.commit
+20/04/22 15:46:47 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:47 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:48 INFO BlockManagerInfo: Removed broadcast_11_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 78.9 KB, free: 1028.7 MB)
+20/04/22 15:46:48 INFO BlockManagerInfo: Removed broadcast_11_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 78.9 KB, free: 2.6 GB)
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 210
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 211
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 220
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 201
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 208
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 221
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 204
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 215
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 197
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 216
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 207
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 217
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 198
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 200
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 218
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 214
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 212
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 203
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 213
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 202
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 209
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 199
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 205
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 219
+20/04/22 15:46:48 INFO ContextCleaner: Cleaned accumulator 206
+20/04/22 15:46:48 INFO SparkContext: Starting job: collect at HoodieCopyOnWriteTable.java:303
+20/04/22 15:46:48 INFO DAGScheduler: Got job 6 (collect at HoodieCopyOnWriteTable.java:303) with 1 output partitions
+20/04/22 15:46:48 INFO DAGScheduler: Final stage: ResultStage 9 (collect at HoodieCopyOnWriteTable.java:303)
+20/04/22 15:46:48 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:48 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:48 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[29] at map at HoodieCopyOnWriteTable.java:302), which has no missing parents
+20/04/22 15:46:48 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 383.6 KB, free 1027.2 MB)
+20/04/22 15:46:48 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 112.2 KB, free 1027.1 MB)
+20/04/22 15:46:48 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 112.2 KB, free: 1028.6 MB)
+20/04/22 15:46:48 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:48 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[29] at map at HoodieCopyOnWriteTable.java:302) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:48 INFO YarnClusterScheduler: Adding task set 9.0 with 1 tasks
+20/04/22 15:46:48 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 8, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 7719 bytes)
+20/04/22 15:46:48 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 112.2 KB, free: 2.6 GB)
+20/04/22 15:46:48 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 8) in 67 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:48 INFO YarnClusterScheduler: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+20/04/22 15:46:48 INFO DAGScheduler: ResultStage 9 (collect at HoodieCopyOnWriteTable.java:303) finished in 0.109 s
+20/04/22 15:46:48 INFO DAGScheduler: Job 6 finished: collect at HoodieCopyOnWriteTable.java:303, took 0.111896 s
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 236
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 230
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 226
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 246
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 225
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 245
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 244
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 243
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 235
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 222
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 223
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 227
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 242
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 238
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 233
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 224
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 229
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_12_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 112.2 KB, free: 1028.7 MB)
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_12_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 112.2 KB, free: 2.6 GB)
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 232
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 239
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 231
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 241
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 240
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 237
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 234
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 228
+20/04/22 15:46:49 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.clean.requested
+20/04/22 15:46:49 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:49 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:49 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.clean.inflight
+20/04/22 15:46:49 INFO SparkContext: Starting job: collect at HoodieCopyOnWriteTable.java:328
+20/04/22 15:46:49 INFO DAGScheduler: Registering RDD 31 (mapPartitionsToPair at HoodieCopyOnWriteTable.java:328)
+20/04/22 15:46:49 INFO DAGScheduler: Got job 7 (collect at HoodieCopyOnWriteTable.java:328) with 1 output partitions
+20/04/22 15:46:49 INFO DAGScheduler: Final stage: ResultStage 11 (collect at HoodieCopyOnWriteTable.java:328)
+20/04/22 15:46:49 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+20/04/22 15:46:49 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+20/04/22 15:46:49 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[31] at mapPartitionsToPair at HoodieCopyOnWriteTable.java:328), which has no missing parents
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 259.4 KB, free 1027.3 MB)
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 77.4 KB, free 1027.2 MB)
+20/04/22 15:46:49 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 77.4 KB, free: 1028.7 MB)
+20/04/22 15:46:49 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:49 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[31] at mapPartitionsToPair at HoodieCopyOnWriteTable.java:328) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:49 INFO YarnClusterScheduler: Adding task set 10.0 with 1 tasks
+20/04/22 15:46:49 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 9, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 7699 bytes)
+20/04/22 15:46:49 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 77.4 KB, free: 2.6 GB)
+20/04/22 15:46:49 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 9) in 46 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:49 INFO YarnClusterScheduler: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+20/04/22 15:46:49 INFO DAGScheduler: ShuffleMapStage 10 (mapPartitionsToPair at HoodieCopyOnWriteTable.java:328) finished in 0.078 s
+20/04/22 15:46:49 INFO DAGScheduler: looking for newly runnable stages
+20/04/22 15:46:49 INFO DAGScheduler: running: Set()
+20/04/22 15:46:49 INFO DAGScheduler: waiting: Set(ResultStage 11)
+20/04/22 15:46:49 INFO DAGScheduler: failed: Set()
+20/04/22 15:46:49 INFO DAGScheduler: Submitting ResultStage 11 (ShuffledRDD[32] at reduceByKey at HoodieCopyOnWriteTable.java:328), which has no missing parents
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 4.7 KB, free 1027.2 MB)
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 2.6 KB, free 1027.2 MB)
+20/04/22 15:46:49 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 2.6 KB, free: 1028.7 MB)
+20/04/22 15:46:49 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (ShuffledRDD[32] at reduceByKey at HoodieCopyOnWriteTable.java:328) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:49 INFO YarnClusterScheduler: Adding task set 11.0 with 1 tasks
+20/04/22 15:46:49 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 10, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 7651 bytes)
+20/04/22 15:46:49 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 2.6 KB, free: 2.6 GB)
+20/04/22 15:46:49 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.31.86.193:55344
+20/04/22 15:46:49 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 10) in 38 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:49 INFO YarnClusterScheduler: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+20/04/22 15:46:49 INFO DAGScheduler: ResultStage 11 (collect at HoodieCopyOnWriteTable.java:328) finished in 0.045 s
+20/04/22 15:46:49 INFO DAGScheduler: Job 7 finished: collect at HoodieCopyOnWriteTable.java:328, took 0.127584 s
+20/04/22 15:46:49 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:49 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/20200422154638.clean
+20/04/22 15:46:49 WARN DefaultSource: Snapshot view not supported yet via data source, for MERGE_ON_READ tables. Please query the Hive table registered using Spark SQL.
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 289
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 290
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 256
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 271
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 251
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 255
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 249
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 273
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 293
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 296
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 291
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 265
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 261
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 294
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 281
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 263
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 267
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 295
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 277
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 285
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 278
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 252
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 288
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 276
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 258
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 282
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 286
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 275
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 268
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 259
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 257
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 283
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned shuffle 2
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 284
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 287
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 280
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 266
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 274
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 254
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 260
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 253
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 262
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 250
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 279
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 264
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 248
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 272
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 269
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_14_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 2.6 KB, free: 1028.7 MB)
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_14_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 2.6 KB, free: 2.6 GB)
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 270
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 247
+20/04/22 15:46:49 INFO ContextCleaner: Cleaned accumulator 292
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_13_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 77.4 KB, free: 1028.7 MB)
+20/04/22 15:46:49 INFO BlockManagerInfo: Removed broadcast_13_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 77.4 KB, free: 2.6 GB)
+20/04/22 15:46:50 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/.hoodie_partition_metadata' for reading
+20/04/22 15:46:50 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:50 WARN DefaultSource: Snapshot view not supported yet via data source, for MERGE_ON_READ tables. Please query the Hive table registered using Spark SQL.
+20/04/22 15:46:50 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/.hoodie_partition_metadata' for reading
+20/04/22 15:46:50 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:51 INFO SparkContext: Starting job: resolveRelation at DefaultSource.scala:77
+20/04/22 15:46:51 INFO DAGScheduler: Got job 8 (resolveRelation at DefaultSource.scala:77) with 1 output partitions
+20/04/22 15:46:51 INFO DAGScheduler: Final stage: ResultStage 12 (resolveRelation at DefaultSource.scala:77)
+20/04/22 15:46:51 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:51 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:51 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[35] at resolveRelation at DefaultSource.scala:77), which has no missing parents
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 133.0 KB, free 1027.4 MB)
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 40.7 KB, free 1027.4 MB)
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 40.7 KB, free: 1028.7 MB)
+20/04/22 15:46:51 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[35] at resolveRelation at DefaultSource.scala:77) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:51 INFO YarnClusterScheduler: Adding task set 12.0 with 1 tasks
+20/04/22 15:46:51 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 11, ip-172-31-86-193.ec2.internal, executor 1, partition 0, PROCESS_LOCAL, 7866 bytes)
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 40.7 KB, free: 2.6 GB)
+20/04/22 15:46:51 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 11) in 294 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:51 INFO YarnClusterScheduler: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+20/04/22 15:46:51 INFO DAGScheduler: ResultStage 12 (resolveRelation at DefaultSource.scala:77) finished in 0.320 s
+20/04/22 15:46:51 INFO DAGScheduler: Job 8 finished: resolveRelation at DefaultSource.scala:77, took 0.322667 s
+20/04/22 15:46:51 INFO FileSourceStrategy: Pruning directories with: 
+20/04/22 15:46:51 INFO FileSourceStrategy: Post-Scan Filters: 
+20/04/22 15:46:51 INFO FileSourceStrategy: Output Data Schema: struct<_hoodie_commit_time: string, _hoodie_commit_seqno: string, _hoodie_record_key: string, _hoodie_partition_path: string, _hoodie_file_name: string ... 8 more fields>
+20/04/22 15:46:51 INFO FileSourceScanExec: Pushed Filters: 
+20/04/22 15:46:51 INFO CodeGenerator: Code generated in 23.436527 ms
+20/04/22 15:46:51 INFO CodeGenerator: Code generated in 37.385452 ms
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 406.3 KB, free 1027.0 MB)
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 40.2 KB, free 1027.0 MB)
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 40.2 KB, free: 1028.7 MB)
+20/04/22 15:46:51 INFO SparkContext: Created broadcast 16 from showString at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:51 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: true
+20/04/22 15:46:51 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: ArrayBuffer((1 fileSplits,1))
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 320
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 304
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 307
+20/04/22 15:46:51 INFO BlockManagerInfo: Removed broadcast_15_piece0 on ip-172-31-86-193.ec2.internal:43479 in memory (size: 40.7 KB, free: 1028.7 MB)
+20/04/22 15:46:51 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+20/04/22 15:46:51 INFO DAGScheduler: Got job 9 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+20/04/22 15:46:51 INFO DAGScheduler: Final stage: ResultStage 13 (showString at NativeMethodAccessorImpl.java:0)
+20/04/22 15:46:51 INFO DAGScheduler: Parents of final stage: List()
+20/04/22 15:46:51 INFO DAGScheduler: Missing parents: List()
+20/04/22 15:46:51 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[39] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/04/22 15:46:51 INFO BlockManagerInfo: Removed broadcast_15_piece0 on ip-172-31-86-193.ec2.internal:39605 in memory (size: 40.7 KB, free: 2.6 GB)
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 13.0 KB, free 1027.1 MB)
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 5.0 KB, free 1027.1 MB)
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on ip-172-31-86-193.ec2.internal:43479 (size: 5.0 KB, free: 1028.7 MB)
+20/04/22 15:46:51 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1201
+20/04/22 15:46:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 13 (MapPartitionsRDD[39] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+20/04/22 15:46:51 INFO YarnClusterScheduler: Adding task set 13.0 with 1 tasks
+20/04/22 15:46:51 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 12, ip-172-31-86-193.ec2.internal, executor 1, partition 0, RACK_LOCAL, 8350 bytes)
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 314
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 300
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 303
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 313
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 301
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 316
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 305
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 309
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 321
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 317
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 297
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 298
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 302
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 308
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 306
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 312
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 299
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 315
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 319
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 311
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 310
+20/04/22 15:46:51 INFO ContextCleaner: Cleaned accumulator 318
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 5.0 KB, free: 2.6 GB)
+20/04/22 15:46:51 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on ip-172-31-86-193.ec2.internal:39605 (size: 40.2 KB, free: 2.6 GB)
+20/04/22 15:46:51 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 12) in 256 ms on ip-172-31-86-193.ec2.internal (executor 1) (1/1)
+20/04/22 15:46:51 INFO YarnClusterScheduler: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+20/04/22 15:46:51 INFO DAGScheduler: ResultStage 13 (showString at NativeMethodAccessorImpl.java:0) finished in 0.275 s
+20/04/22 15:46:51 INFO DAGScheduler: Job 9 finished: showString at NativeMethodAccessorImpl.java:0, took 0.277049 s
+20/04/22 15:46:51 INFO ApplicationMaster: Final app status: SUCCEEDED, exitCode: 0
+20/04/22 15:46:51 INFO SparkContext: Invoking stop() from shutdown hook
+20/04/22 15:46:51 INFO SparkUI: Stopped Spark web UI at http://ip-172-31-86-193.ec2.internal:43319
+20/04/22 15:46:51 INFO YarnClusterSchedulerBackend: Shutting down all executors
+20/04/22 15:46:51 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+20/04/22 15:46:51 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+20/04/22 15:46:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/04/22 15:46:51 INFO MemoryStore: MemoryStore cleared
+20/04/22 15:46:51 INFO BlockManager: BlockManager stopped
+20/04/22 15:46:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+20/04/22 15:46:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/04/22 15:46:51 INFO SparkContext: Successfully stopped SparkContext
+20/04/22 15:46:51 INFO ApplicationMaster: Unregistering ApplicationMaster with SUCCEEDED
+20/04/22 15:46:51 INFO AMRMClientImpl: Waiting for application to be successfully unregistered.
+20/04/22 15:46:52 INFO ApplicationMaster: Deleting staging directory hdfs://ip-172-31-86-193.ec2.internal:8020/user/hadoop/.sparkStaging/application_1587544594037_0027
+20/04/22 15:46:52 INFO ShutdownHookManager: Shutdown hook called
+20/04/22 15:46:52 INFO ShutdownHookManager: Deleting directory /mnt1/yarn/usercache/hadoop/appcache/application_1587544594037_0027/spark-cb32ff46-a797-45b8-b183-b90d179f5236
+20/04/22 15:46:52 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1587544594037_0027/spark-8e2a4618-8045-472c-a0f0-8e68d83a1be6
+20/04/22 15:46:52 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1587544594037_0027/spark-8e2a4618-8045-472c-a0f0-8e68d83a1be6/pyspark-7b4b89ee-f4ed-4872-9d59-af516d77e1f9
+End of LogType:stderr
+
+LogType:stdout
+Log Upload Time:Wed Apr 22 15:46:52 +0000 2020
+LogLength:1783
+Log Contents:
+============= inset_into_hudi Sales Data =============
++--------+-----------+------------+-----+----------+
+|sales_id|customer_id|product_name|price|updated_at|
++--------+-----------+------------+-----+----------+
+|       1|         33|       adeel|   50|1587544150|
+|       2|         44|      hashim|   50|1587544150|
++--------+-----------+------------+-----+----------+
+
+========================================================================================================================================================================================================
+s3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv
+insert
+insert_table
+s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/
+
+
+
+here we are getting data back
+
+
+
+============= query_inserted_data Department Data =============
++-------------------+--------------------+------------------+----------------------+--------------------+--------+-----------+------------+-----+----------+
+|_hoodie_commit_time|_hoodie_commit_seqno|_hoodie_record_key|_hoodie_partition_path|   _hoodie_file_name|sales_id|customer_id|product_name|price|updated_at|
++-------------------+--------------------+------------------+----------------------+--------------------+--------+-----------+------------+-----+----------+
+|     20200422154638|  20200422154638_0_1|                 1|               default|05b397b3-e3bb-44c...|       1|         33|       adeel|   50|1587544150|
+|     20200422154638|  20200422154638_0_2|                 2|               default|05b397b3-e3bb-44c...|       2|         44|      hashim|   50|1587544150|
++-------------------+--------------------+------------------+----------------------+--------------------+--------+-----------+------------+-----+----------+
+
+End of LogType:stdout
+
+
+
+Container: container_1587544594037_0027_01_000002 on ip-172-31-86-193.ec2.internal_8041
+=========================================================================================
+LogType:stderr
+Log Upload Time:Wed Apr 22 15:46:52 +0000 2020
+LogLength:22270
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt1/yarn/usercache/hadoop/filecache/341/__spark_libs__9208895924151612466.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+20/04/22 15:46:27 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 26321@ip-172-31-86-193
+20/04/22 15:46:27 INFO SignalUtils: Registered signal handler for TERM
+20/04/22 15:46:27 INFO SignalUtils: Registered signal handler for HUP
+20/04/22 15:46:27 INFO SignalUtils: Registered signal handler for INT
+20/04/22 15:46:28 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/04/22 15:46:28 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/04/22 15:46:28 INFO SecurityManager: Changing view acls groups to: 
+20/04/22 15:46:28 INFO SecurityManager: Changing modify acls groups to: 
+20/04/22 15:46:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/04/22 15:46:29 INFO TransportClientFactory: Successfully created connection to ip-172-31-86-193.ec2.internal/172.31.86.193:46011 after 99 ms (0 ms spent in bootstraps)
+20/04/22 15:46:29 INFO SecurityManager: Changing view acls to: yarn,hadoop
+20/04/22 15:46:29 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+20/04/22 15:46:29 INFO SecurityManager: Changing view acls groups to: 
+20/04/22 15:46:29 INFO SecurityManager: Changing modify acls groups to: 
+20/04/22 15:46:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+20/04/22 15:46:29 INFO TransportClientFactory: Successfully created connection to ip-172-31-86-193.ec2.internal/172.31.86.193:46011 after 16 ms (0 ms spent in bootstraps)
+20/04/22 15:46:30 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1587544594037_0027/blockmgr-985ef574-999e-42f5-8b55-a1f6036b4192
+20/04/22 15:46:30 INFO DiskBlockManager: Created local directory at /mnt1/yarn/usercache/hadoop/appcache/application_1587544594037_0027/blockmgr-420895f4-f36f-4eb3-89e3-03b09b7d4c6f
+20/04/22 15:46:30 INFO MemoryStore: MemoryStore started with capacity 2.6 GB
+20/04/22 15:46:30 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-172-31-86-193.ec2.internal:46011
+20/04/22 15:46:30 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/04/22 15:46:30 INFO Executor: Starting executor ID 1 on host ip-172-31-86-193.ec2.internal
+20/04/22 15:46:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39605.
+20/04/22 15:46:30 INFO NettyBlockTransferService: Server created on ip-172-31-86-193.ec2.internal:39605
+20/04/22 15:46:30 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/04/22 15:46:30 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(1, ip-172-31-86-193.ec2.internal, 39605, None)
+20/04/22 15:46:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(1, ip-172-31-86-193.ec2.internal, 39605, None)
+20/04/22 15:46:31 INFO BlockManager: external shuffle service port = 7337
+20/04/22 15:46:31 INFO BlockManager: Registering executor with local external shuffle service.
+20/04/22 15:46:31 INFO TransportClientFactory: Successfully created connection to ip-172-31-86-193.ec2.internal/172.31.86.193:7337 after 21 ms (0 ms spent in bootstraps)
+20/04/22 15:46:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(1, ip-172-31-86-193.ec2.internal, 39605, None)
+20/04/22 15:46:32 INFO ClientConfigurationFactory: Set initial getObject socket timeout to 2000 ms.
+20/04/22 15:46:33 INFO CoarseGrainedExecutorBackend: eagerFSInit: Eagerly initialized FileSystem at s3://does/not/exist in 2506 ms
+20/04/22 15:46:35 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+20/04/22 15:46:35 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/04/22 15:46:35 INFO TorrentBroadcast: Started reading broadcast variable 1
+20/04/22 15:46:35 INFO TransportClientFactory: Successfully created connection to ip-172-31-86-193.ec2.internal/172.31.86.193:43479 after 1 ms (0 ms spent in bootstraps)
+20/04/22 15:46:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.6 KB, free 2.6 GB)
+20/04/22 15:46:35 INFO TorrentBroadcast: Reading broadcast variable 1 took 123 ms
+20/04/22 15:46:36 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.8 KB, free 2.6 GB)
+20/04/22 15:46:36 INFO CodeGenerator: Code generated in 240.290039 ms
+20/04/22 15:46:36 INFO FileScanRDD: TID: 0 - Reading current file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv, range: 0-105, partition values: [empty row], isDataPresent: false
+20/04/22 15:46:36 INFO CodeGenerator: Code generated in 10.401625 ms
+20/04/22 15:46:36 INFO TorrentBroadcast: Started reading broadcast variable 0
+20/04/22 15:46:36 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 39.1 KB, free 2.6 GB)
+20/04/22 15:46:36 INFO TorrentBroadcast: Reading broadcast variable 0 took 14 ms
+20/04/22 15:46:36 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 589.1 KB, free 2.6 GB)
+20/04/22 15:46:36 INFO ClientConfigurationFactory: Set initial getObject socket timeout to 2000 ms.
+20/04/22 15:46:37 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv' for reading
+20/04/22 15:46:37 INFO GPLNativeCodeLoader: Loaded native gpl library
+20/04/22 15:46:37 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 5f788d5e8f90539ee331702c753fa250727128f4]
+20/04/22 15:46:37 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1377 bytes result sent to driver
+20/04/22 15:46:38 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+20/04/22 15:46:38 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+20/04/22 15:46:38 INFO TorrentBroadcast: Started reading broadcast variable 4
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.6 KB, free 2.6 GB)
+20/04/22 15:46:38 INFO TorrentBroadcast: Reading broadcast variable 4 took 16 ms
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.2 KB, free 2.6 GB)
+20/04/22 15:46:38 INFO CodeGenerator: Code generated in 10.819999 ms
+20/04/22 15:46:38 INFO FileScanRDD: TID: 1 - Reading current file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv, range: 0-105, partition values: [empty row], isDataPresent: false
+20/04/22 15:46:38 INFO CodeGenerator: Code generated in 23.301997 ms
+20/04/22 15:46:38 INFO TorrentBroadcast: Started reading broadcast variable 3
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 39.1 KB, free 2.6 GB)
+20/04/22 15:46:38 INFO TorrentBroadcast: Reading broadcast variable 3 took 13 ms
+20/04/22 15:46:38 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 589.1 KB, free 2.6 GB)
+20/04/22 15:46:38 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv' for reading
+20/04/22 15:46:38 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1312 bytes result sent to driver
+20/04/22 15:46:39 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+20/04/22 15:46:39 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+20/04/22 15:46:39 INFO TorrentBroadcast: Started reading broadcast variable 6
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 8.7 KB, free 2.6 GB)
+20/04/22 15:46:39 INFO TorrentBroadcast: Reading broadcast variable 6 took 14 ms
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 17.5 KB, free 2.6 GB)
+20/04/22 15:46:39 INFO FileScanRDD: TID: 2 - Reading current file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv, range: 0-105, partition values: [empty row], isDataPresent: false
+20/04/22 15:46:39 INFO TorrentBroadcast: Started reading broadcast variable 5
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 39.1 KB, free 2.6 GB)
+20/04/22 15:46:39 INFO TorrentBroadcast: Reading broadcast variable 5 took 14 ms
+20/04/22 15:46:39 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 589.1 KB, free 2.6 GB)
+20/04/22 15:46:39 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv' for reading
+20/04/22 15:46:40 INFO CodeGenerator: Code generated in 20.812476 ms
+20/04/22 15:46:40 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1448 bytes result sent to driver
+20/04/22 15:46:42 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+20/04/22 15:46:42 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+20/04/22 15:46:42 INFO TorrentBroadcast: Started reading broadcast variable 7
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 9.9 KB, free 2.6 GB)
+20/04/22 15:46:42 INFO TorrentBroadcast: Reading broadcast variable 7 took 36 ms
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 19.8 KB, free 2.6 GB)
+20/04/22 15:46:42 INFO FileScanRDD: TID: 3 - Reading current file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv, range: 0-105, partition values: [empty row], isDataPresent: false
+20/04/22 15:46:42 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/data/sales2.csv' for reading
+20/04/22 15:46:42 INFO MemoryStore: Block rdd_17_0 stored as values in memory (estimated size 222.0 B, free 2.6 GB)
+20/04/22 15:46:42 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1452 bytes result sent to driver
+20/04/22 15:46:42 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+20/04/22 15:46:42 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+20/04/22 15:46:42 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+20/04/22 15:46:42 INFO TorrentBroadcast: Started reading broadcast variable 8
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.1 KB, free 2.6 GB)
+20/04/22 15:46:42 INFO TorrentBroadcast: Reading broadcast variable 8 took 9 ms
+20/04/22 15:46:42 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 3.6 KB, free 2.6 GB)
+20/04/22 15:46:42 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+20/04/22 15:46:42 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-86-193.ec2.internal:46011)
+20/04/22 15:46:42 INFO MapOutputTrackerWorker: Got the output locations
+20/04/22 15:46:42 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+20/04/22 15:46:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+20/04/22 15:46:42 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1194 bytes result sent to driver
+20/04/22 15:46:43 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+20/04/22 15:46:43 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+20/04/22 15:46:43 INFO TorrentBroadcast: Started reading broadcast variable 9
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 84.6 KB, free 2.6 GB)
+20/04/22 15:46:43 INFO TorrentBroadcast: Reading broadcast variable 9 took 7 ms
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 274.0 KB, free 2.6 GB)
+20/04/22 15:46:43 INFO BlockManager: Found block rdd_17_0 locally
+20/04/22 15:46:43 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 1366 bytes result sent to driver
+20/04/22 15:46:43 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+20/04/22 15:46:43 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+20/04/22 15:46:43 INFO MapOutputTrackerWorker: Updating epoch to 2 and clearing cache
+20/04/22 15:46:43 INFO TorrentBroadcast: Started reading broadcast variable 10
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 78.8 KB, free 2.6 GB)
+20/04/22 15:46:43 INFO TorrentBroadcast: Reading broadcast variable 10 took 7 ms
+20/04/22 15:46:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 261.9 KB, free 2.6 GB)
+20/04/22 15:46:44 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+20/04/22 15:46:44 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-86-193.ec2.internal:46011)
+20/04/22 15:46:44 INFO MapOutputTrackerWorker: Got the output locations
+20/04/22 15:46:44 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+20/04/22 15:46:44 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+20/04/22 15:46:44 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/hoodie.properties' for reading
+20/04/22 15:46:44 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/.hoodie/.temp/20200422154638/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.marker
+20/04/22 15:46:45 INFO ZlibFactory: Successfully loaded & initialized native-zlib library
+20/04/22 15:46:45 INFO CodecPool: Got brand-new compressor [.gz]
+20/04/22 15:46:45 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154312.parquet' for reading
+20/04/22 15:46:45 INFO CodecPool: Got brand-new decompressor [.gz]
+20/04/22 15:46:45 INFO MultipartUploadOutputStream: close closed:false s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet
+20/04/22 15:46:46 INFO MemoryStore: Block rdd_25_0 stored as values in memory (estimated size 293.0 B, free 2.6 GB)
+20/04/22 15:46:46 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 1010 bytes result sent to driver
+20/04/22 15:46:46 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+20/04/22 15:46:46 INFO Executor: Running task 0.0 in stage 8.0 (TID 7)
+20/04/22 15:46:46 INFO TorrentBroadcast: Started reading broadcast variable 11
+20/04/22 15:46:46 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 78.9 KB, free 2.6 GB)
+20/04/22 15:46:46 INFO TorrentBroadcast: Reading broadcast variable 11 took 7 ms
+20/04/22 15:46:46 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 262.1 KB, free 2.6 GB)
+20/04/22 15:46:46 INFO BlockManager: Found block rdd_25_0 locally
+20/04/22 15:46:46 INFO Executor: Finished task 0.0 in stage 8.0 (TID 7). 1026 bytes result sent to driver
+20/04/22 15:46:48 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+20/04/22 15:46:48 INFO Executor: Running task 0.0 in stage 9.0 (TID 8)
+20/04/22 15:46:48 INFO TorrentBroadcast: Started reading broadcast variable 12
+20/04/22 15:46:48 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 112.2 KB, free 2.6 GB)
+20/04/22 15:46:48 INFO TorrentBroadcast: Reading broadcast variable 12 took 7 ms
+20/04/22 15:46:48 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 383.6 KB, free 2.6 GB)
+20/04/22 15:46:48 INFO Executor: Finished task 0.0 in stage 9.0 (TID 8). 754 bytes result sent to driver
+20/04/22 15:46:49 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+20/04/22 15:46:49 INFO Executor: Running task 0.0 in stage 10.0 (TID 9)
+20/04/22 15:46:49 INFO TorrentBroadcast: Started reading broadcast variable 13
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 77.4 KB, free 2.6 GB)
+20/04/22 15:46:49 INFO TorrentBroadcast: Reading broadcast variable 13 took 6 ms
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 259.4 KB, free 2.6 GB)
+20/04/22 15:46:49 INFO Executor: Finished task 0.0 in stage 10.0 (TID 9). 881 bytes result sent to driver
+20/04/22 15:46:49 INFO CoarseGrainedExecutorBackend: Got assigned task 10
+20/04/22 15:46:49 INFO Executor: Running task 0.0 in stage 11.0 (TID 10)
+20/04/22 15:46:49 INFO MapOutputTrackerWorker: Updating epoch to 3 and clearing cache
+20/04/22 15:46:49 INFO TorrentBroadcast: Started reading broadcast variable 14
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 2.6 KB, free 2.6 GB)
+20/04/22 15:46:49 INFO TorrentBroadcast: Reading broadcast variable 14 took 8 ms
+20/04/22 15:46:49 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 4.7 KB, free 2.6 GB)
+20/04/22 15:46:49 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 2, fetching them
+20/04/22 15:46:49 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-86-193.ec2.internal:46011)
+20/04/22 15:46:49 INFO MapOutputTrackerWorker: Got the output locations
+20/04/22 15:46:49 INFO ShuffleBlockFetcherIterator: Getting 0 non-empty blocks including 0 local blocks and 0 remote blocks
+20/04/22 15:46:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+20/04/22 15:46:49 INFO Executor: Finished task 0.0 in stage 11.0 (TID 10). 1098 bytes result sent to driver
+20/04/22 15:46:51 INFO CoarseGrainedExecutorBackend: Got assigned task 11
+20/04/22 15:46:51 INFO Executor: Running task 0.0 in stage 12.0 (TID 11)
+20/04/22 15:46:51 INFO TorrentBroadcast: Started reading broadcast variable 15
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 40.7 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO TorrentBroadcast: Reading broadcast variable 15 took 12 ms
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 133.0 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet' for reading
+20/04/22 15:46:51 INFO Executor: Finished task 0.0 in stage 12.0 (TID 11). 1213 bytes result sent to driver
+20/04/22 15:46:51 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+20/04/22 15:46:51 INFO Executor: Running task 0.0 in stage 13.0 (TID 12)
+20/04/22 15:46:51 INFO TorrentBroadcast: Started reading broadcast variable 17
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 5.0 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO TorrentBroadcast: Reading broadcast variable 17 took 7 ms
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 13.0 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO AsyncFileDownloader: TID: 12 - Number of files to download: 1, unique file paths: 1
+20/04/22 15:46:51 INFO AsyncFileDownloader: TID: 12 - Downloading file s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet, start: 0, length: 435036
+20/04/22 15:46:51 INFO TorrentBroadcast: Started reading broadcast variable 16
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 40.2 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO TorrentBroadcast: Reading broadcast variable 16 took 10 ms
+20/04/22 15:46:51 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 595.5 KB, free 2.6 GB)
+20/04/22 15:46:51 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet' for reading
+20/04/22 15:46:51 INFO CodeGenerator: Code generated in 52.331889 ms
+20/04/22 15:46:51 INFO S3NativeFileSystem: Opening 's3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet' for reading
+20/04/22 15:46:51 INFO AsyncFileDownloader: TID: 12 - Downloaded file s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet, start: 0, length: 435036, Elapsed time: 179343micros
+20/04/22 15:46:51 INFO FileScanRDD: TID: 12 - Got next file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet, range: 0-435036, partition values: [empty row], isDataPresent: true. Elapsed time: 130829 micros
+20/04/22 15:46:51 INFO FileScanRDD: TID: 12 - Reading current file: path: s3://air-product-training-datalake/hashim-yousaf/hudi-poc/insertsales/default/05b397b3-e3bb-44c9-9654-8c16322d153e-0_0-6-6_20200422154638.parquet, range: 0-435036, partition values: [empty row], isDataPresent: true
+20/04/22 15:46:51 INFO Executor: Finished task 0.0 in stage 13.0 (TID 12). 1549 bytes result sent to driver
+20/04/22 15:46:51 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/04/22 15:46:51 INFO MemoryStore: MemoryStore cleared
+20/04/22 15:46:51 INFO BlockManager: BlockManager stopped
+20/04/22 15:46:51 INFO ShutdownHookManager: Shutdown hook called
+End of LogType:stderr
+
+LogType:stdout
+Log Upload Time:Wed Apr 22 15:46:52 +0000 2020
+LogLength:13600
+Log Contents:
+2020-04-22T15:46:27.595+0000: [GC (Allocation Failure) 2020-04-22T15:46:27.595+0000: [ParNew: 66624K->5385K(74944K), 0.0081477 secs] 66624K->5385K(241536K), 0.0082158 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:28.105+0000: [GC (Allocation Failure) 2020-04-22T15:46:28.105+0000: [ParNew: 72009K->4852K(74944K), 0.0224506 secs] 72009K->6823K(241536K), 0.0225022 secs] [Times: user=0.03 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:28.485+0000: [GC (Allocation Failure) 2020-04-22T15:46:28.485+0000: [ParNew: 71476K->3296K(74944K), 0.0057851 secs] 73447K->5267K(241536K), 0.0058354 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:28.941+0000: [GC (Allocation Failure) 2020-04-22T15:46:28.941+0000: [ParNew: 69920K->4406K(74944K), 0.0198303 secs] 71891K->6378K(241536K), 0.0198769 secs] [Times: user=0.04 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:29.232+0000: [GC (Allocation Failure) 2020-04-22T15:46:29.232+0000: [ParNew: 71030K->5138K(74944K), 0.0063908 secs] 73002K->7109K(241536K), 0.0064416 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:29.465+0000: [GC (Allocation Failure) 2020-04-22T15:46:29.465+0000: [ParNew: 63742K->5623K(74944K), 0.0107553 secs] 65713K->7594K(241536K), 0.0108065 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:29.477+0000: [GC (CMS Initial Mark) [1 CMS-initial-mark: 1971K(166592K)] 23978K(241536K), 0.0034891 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:29.481+0000: [CMS-concurrent-mark-start]
+2020-04-22T15:46:29.525+0000: [CMS-concurrent-mark: 0.044/0.044 secs] [Times: user=0.05 sys=0.01, real=0.04 secs] 
+2020-04-22T15:46:29.525+0000: [CMS-concurrent-preclean-start]
+2020-04-22T15:46:29.526+0000: [CMS-concurrent-preclean: 0.001/0.001 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:29.526+0000: [CMS-concurrent-abortable-preclean-start]
+2020-04-22T15:46:29.880+0000: [GC (Allocation Failure) 2020-04-22T15:46:29.880+0000: [ParNew2020-04-22T15:46:29.948+0000: [CMS-concurrent-abortable-preclean: 0.126/0.421 secs] [Times: user=0.70 sys=0.02, real=0.42 secs] 
+: 64195K->4813K(74944K), 0.0767963 secs] 66166K->24428K(241536K), 0.0768531 secs] [Times: user=0.10 sys=0.02, real=0.07 secs] 
+2020-04-22T15:46:29.964+0000: [GC (CMS Final Remark) [YG occupancy: 21423 K (74944 K)]2020-04-22T15:46:29.964+0000: [Rescan (parallel) , 0.0106830 secs]2020-04-22T15:46:29.975+0000: [weak refs processing, 0.0000271 secs]2020-04-22T15:46:29.975+0000: [class unloading, 0.0025772 secs]2020-04-22T15:46:29.977+0000: [scrub symbol table, 0.0031460 secs]2020-04-22T15:46:29.980+0000: [scrub string table, 0.0002823 secs][1 CMS-remark: 19614K(166592K)] 41038K(241536K), 0.0170205 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:29.984+0000: [CMS-concurrent-sweep-start]
+2020-04-22T15:46:29.986+0000: [CMS-concurrent-sweep: 0.002/0.002 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:29.986+0000: [CMS-concurrent-reset-start]
+2020-04-22T15:46:30.085+0000: [CMS-concurrent-reset: 0.099/0.099 secs] [Times: user=0.08 sys=0.07, real=0.10 secs] 
+2020-04-22T15:46:30.270+0000: [GC (Allocation Failure) 2020-04-22T15:46:30.270+0000: [ParNew: 71437K->5047K(74944K), 0.0613981 secs] 91040K->41034K(241536K), 0.0614515 secs] [Times: user=0.08 sys=0.00, real=0.06 secs] 
+2020-04-22T15:46:30.554+0000: [GC (Allocation Failure) 2020-04-22T15:46:30.554+0000: [ParNew: 71671K->6618K(74944K), 0.0074091 secs] 107658K->42927K(241536K), 0.0074570 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:30.878+0000: [GC (Allocation Failure) 2020-04-22T15:46:30.878+0000: [ParNew: 73242K->5793K(74944K), 0.0176282 secs] 109551K->43201K(241536K), 0.0177006 secs] [Times: user=0.04 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:31.176+0000: [GC (Allocation Failure) 2020-04-22T15:46:31.176+0000: [ParNew: 72417K->5878K(74944K), 0.0329709 secs] 109825K->60341K(241536K), 0.0330302 secs] [Times: user=0.09 sys=0.01, real=0.03 secs] 
+2020-04-22T15:46:31.507+0000: [GC (Allocation Failure) 2020-04-22T15:46:31.507+0000: [ParNew: 72502K->4477K(74944K), 0.0080436 secs] 126965K->58940K(241536K), 0.0080934 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:31.796+0000: [GC (Allocation Failure) 2020-04-22T15:46:31.796+0000: [ParNew: 71101K->5859K(74944K), 0.0110573 secs] 125564K->60820K(241536K), 0.0111175 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:32.128+0000: [GC (Allocation Failure) 2020-04-22T15:46:32.128+0000: [ParNew: 72483K->5807K(74944K), 0.0100905 secs] 127444K->62358K(241536K), 0.0101344 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:32.643+0000: [GC (Allocation Failure) 2020-04-22T15:46:32.643+0000: [ParNew: 72431K->5999K(74944K), 0.0091912 secs] 128982K->63355K(241536K), 0.0092524 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:32.653+0000: [GC (CMS Initial Mark) [1 CMS-initial-mark: 57356K(166592K)] 64525K(241536K), 0.0022960 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:32.655+0000: [CMS-concurrent-mark-start]
+2020-04-22T15:46:32.691+0000: [CMS-concurrent-mark: 0.036/0.036 secs] [Times: user=0.08 sys=0.00, real=0.03 secs] 
+2020-04-22T15:46:32.692+0000: [CMS-concurrent-preclean-start]
+2020-04-22T15:46:32.693+0000: [CMS-concurrent-preclean: 0.001/0.001 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:32.693+0000: [CMS-concurrent-abortable-preclean-start]
+2020-04-22T15:46:32.927+0000: [CMS-concurrent-abortable-preclean: 0.192/0.234 secs] [Times: user=0.52 sys=0.00, real=0.23 secs] 
+2020-04-22T15:46:32.928+0000: [GC (CMS Final Remark) [YG occupancy: 44580 K (74944 K)]2020-04-22T15:46:32.928+0000: [Rescan (parallel) , 0.0082237 secs]2020-04-22T15:46:32.936+0000: [weak refs processing, 0.0000475 secs]2020-04-22T15:46:32.936+0000: [class unloading, 0.0048810 secs]2020-04-22T15:46:32.941+0000: [scrub symbol table, 0.0076416 secs]2020-04-22T15:46:32.948+0000: [scrub string table, 0.0005978 secs][1 CMS-remark: 57356K(166592K)] 101936K(241536K), 0.0216086 secs] [Times: user=0.06 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:32.949+0000: [CMS-concurrent-sweep-start]
+2020-04-22T15:46:32.953+0000: [CMS-concurrent-sweep: 0.004/0.004 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:32.953+0000: [CMS-concurrent-reset-start]
+2020-04-22T15:46:32.961+0000: [CMS-concurrent-reset: 0.008/0.008 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:33.167+0000: [GC (Allocation Failure) 2020-04-22T15:46:33.167+0000: [ParNew: 72623K->5527K(74944K), 0.0327416 secs] 129645K->66937K(241536K), 0.0328073 secs] [Times: user=0.06 sys=0.00, real=0.03 secs] 
+2020-04-22T15:46:35.751+0000: [GC (Allocation Failure) 2020-04-22T15:46:35.751+0000: [ParNew: 66109K->2564K(74944K), 0.0036490 secs] 127518K->63974K(241536K), 0.0036941 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:35.952+0000: [GC (Allocation Failure) 2020-04-22T15:46:35.952+0000: [ParNew: 69188K->3146K(74944K), 0.0151962 secs] 130598K->80940K(241536K), 0.0152494 secs] [Times: user=0.06 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:36.223+0000: [GC (Allocation Failure) 2020-04-22T15:46:36.223+0000: [ParNew: 69770K->6218K(74944K), 0.0044229 secs] 147564K->84012K(241536K), 0.0044711 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:36.580+0000: [GC (Allocation Failure) 2020-04-22T15:46:36.580+0000: [ParNew: 72842K->5350K(74944K), 0.0114620 secs] 150636K->84686K(241536K), 0.0115380 secs] [Times: user=0.05 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:36.875+0000: [GC (Allocation Failure) 2020-04-22T15:46:36.875+0000: [ParNew: 71974K->4963K(74944K), 0.0069113 secs] 151310K->84299K(241536K), 0.0069714 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:37.066+0000: [GC (Allocation Failure) 2020-04-22T15:46:37.066+0000: [ParNew: 71587K->5785K(74944K), 0.0057591 secs] 150923K->86156K(241536K), 0.0058162 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:38.190+0000: [GC (Allocation Failure) 2020-04-22T15:46:38.190+0000: [ParNew: 72409K->6365K(74944K), 0.0138511 secs] 152780K->87612K(241536K), 0.0139092 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:39.539+0000: [GC (Allocation Failure) 2020-04-22T15:46:39.539+0000: [ParNew: 72989K->7079K(74944K), 0.0185723 secs] 154236K->89810K(241536K), 0.0186467 secs] [Times: user=0.04 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:39.804+0000: [GC (Allocation Failure) 2020-04-22T15:46:39.804+0000: [ParNew: 73703K->4902K(74944K), 0.0154740 secs] 156434K->89267K(241536K), 0.0155269 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:40.076+0000: [GC (Allocation Failure) 2020-04-22T15:46:40.076+0000: [ParNew: 71526K->4244K(74944K), 0.0151829 secs] 155891K->88609K(241536K), 0.0152406 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:40.323+0000: [GC (Allocation Failure) 2020-04-22T15:46:40.323+0000: [ParNew: 70868K->4168K(74944K), 0.0033518 secs] 155233K->88534K(241536K), 0.0034083 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:40.611+0000: [GC (Allocation Failure) 2020-04-22T15:46:40.611+0000: [ParNew: 70792K->5496K(74944K), 0.0042457 secs] 155158K->89862K(241536K), 0.0043007 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:42.552+0000: [GC (Allocation Failure) 2020-04-22T15:46:42.552+0000: [ParNew: 72120K->7135K(74944K), 0.0177418 secs] 156486K->92425K(241536K), 0.0178029 secs] [Times: user=0.03 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:42.570+0000: [GC (CMS Initial Mark) [1 CMS-initial-mark: 85290K(166592K)] 93728K(241536K), 0.0040593 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:42.575+0000: [CMS-concurrent-mark-start]
+2020-04-22T15:46:42.631+0000: [CMS-concurrent-mark: 0.056/0.056 secs] [Times: user=0.11 sys=0.00, real=0.05 secs] 
+2020-04-22T15:46:42.631+0000: [CMS-concurrent-preclean-start]
+2020-04-22T15:46:42.633+0000: [CMS-concurrent-preclean: 0.002/0.002 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:42.633+0000: [CMS-concurrent-abortable-preclean-start]
+2020-04-22T15:46:42.814+0000: [CMS-concurrent-abortable-preclean: 0.089/0.182 secs] [Times: user=0.32 sys=0.01, real=0.18 secs] 
+2020-04-22T15:46:42.815+0000: [GC (CMS Final Remark) [YG occupancy: 41796 K (74944 K)]2020-04-22T15:46:42.815+0000: [Rescan (parallel) , 0.0087509 secs]2020-04-22T15:46:42.823+0000: [weak refs processing, 0.0000716 secs]2020-04-22T15:46:42.824+0000: [class unloading, 0.0096898 secs]2020-04-22T15:46:42.833+0000: [scrub symbol table, 0.0119287 secs]2020-04-22T15:46:42.845+0000: [scrub string table, 0.0008895 secs][1 CMS-remark: 85290K(166592K)] 127087K(241536K), 0.0316292 secs] [Times: user=0.05 sys=0.00, real=0.03 secs] 
+2020-04-22T15:46:42.846+0000: [CMS-concurrent-sweep-start]
+2020-04-22T15:46:42.856+0000: [CMS-concurrent-sweep: 0.010/0.010 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:42.856+0000: [CMS-concurrent-reset-start]
+2020-04-22T15:46:42.865+0000: [CMS-concurrent-reset: 0.008/0.008 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:43.753+0000: [GC (Allocation Failure) 2020-04-22T15:46:43.753+0000: [ParNew: 73759K->7807K(74944K), 0.0076073 secs] 158581K->93695K(241536K), 0.0076610 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:44.054+0000: [GC (Allocation Failure) 2020-04-22T15:46:44.054+0000: [ParNew: 74431K->5744K(74944K), 0.0150211 secs] 160319K->94672K(241536K), 0.0150818 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+2020-04-22T15:46:44.815+0000: [GC (Allocation Failure) 2020-04-22T15:46:44.815+0000: [ParNew: 72368K->4629K(74944K), 0.0043198 secs] 161296K->94275K(241536K), 0.0043773 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:45.125+0000: [GC (Allocation Failure) 2020-04-22T15:46:45.125+0000: [ParNew: 71253K->6584K(74944K), 0.0039640 secs] 160899K->96230K(241536K), 0.0040108 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:45.320+0000: [GC (Allocation Failure) 2020-04-22T15:46:45.320+0000: [ParNew: 73208K->6695K(74944K), 0.0072349 secs] 162854K->98215K(241536K), 0.0072891 secs] [Times: user=0.02 sys=0.01, real=0.01 secs] 
+2020-04-22T15:46:45.741+0000: [GC (Allocation Failure) 2020-04-22T15:46:45.741+0000: [ParNew: 73319K->3268K(74944K), 0.0050867 secs] 164839K->97178K(241536K), 0.0051453 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-04-22T15:46:49.058+0000: [GC (Allocation Failure) 2020-04-22T15:46:49.058+0000: [ParNew: 69892K->4348K(74944K), 0.0174452 secs] 163802K->98258K(241536K), 0.0175170 secs] [Times: user=0.05 sys=0.00, real=0.02 secs] 
+2020-04-22T15:46:51.736+0000: [GC (Allocation Failure) 2020-04-22T15:46:51.736+0000: [ParNew: 70972K->5924K(74944K), 0.0066493 secs] 164882K->99834K(241536K), 0.0067139 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+Heap
+ par new generation   total 74944K, used 39545K [0x0000000697800000, 0x000000069c950000, 0x00000006ac4c0000)
+  eden space 66624K,  50% used [0x0000000697800000, 0x00000006998d5320, 0x000000069b910000)
+  from space 8320K,  71% used [0x000000069c130000, 0x000000069c6f9228, 0x000000069c950000)
+  to   space 8320K,   0% used [0x000000069b910000, 0x000000069b910000, 0x000000069c130000)
+ concurrent mark-sweep generation total 166592K, used 93910K [0x00000006ac4c0000, 0x00000006b6770000, 0x00000007c0000000)
+ Metaspace       used 83416K, capacity 84732K, committed 85012K, reserved 1122304K
+  class space    used 10956K, capacity 11259K, committed 11284K, reserved 1048576K
+End of LogType:stdout
+

@@ -1,0 +1,78 @@
+{
+	"Customers": {
+		"column1_detail": {
+		  "column_name": "customer_id",
+		  "provider_type": "customer_id"
+		},
+		"column2_detail": {
+		  "column_name": "first_name",
+		  "provider_type": "first_name"
+		},
+		"column3_detail": {
+		  "column_name": "email",
+		  "provider_type": "email"
+		},
+		"column4_detail": {
+		  "column_name": "time_zone",
+		  "provider_type": "time_zone"
+		},
+		"column5_detail": {
+		  "column_name": "city",
+		  "provider_type": "city"
+		},
+		"column6_detail": {
+			"column_name": "web_domain",
+			"provider_type": "web_domain"
+		},
+		"column7_detail": {
+		  "column_name": "updated_at",
+		  "provider_type": "updated_at"
+		},
+		"column8_detail": {
+		  "column_name": "is_deleted",
+		  "provider_type": "is_deleted"
+		}
+	  },
+	"Sales": {
+		"Sale1_detail": {
+			"column_name": "sales_id",
+			"provider_type": "sales_id"
+		},
+		"Sale2_detail": {
+			"column_name": "customer_id",
+			"provider_type": "customer_id"
+		},
+		"Sale3_detail": {
+			"column_name": "product_name",
+			"provider_type": "product_name"
+		},
+		"Sale4_detail": {
+			"column_name": "price",
+			"provider_type": "price"
+		},
+		"Sale5_detail": {
+			"column_name": "quantity",
+			"provider_type": "quantity"
+		},
+		"Sale6_detail": {
+			"column_name": "sale_date",
+			"provider_type": "sale_date"
+		},
+		"Sale7_detail": {
+			"column_name": "updated_at",
+			"provider_type": "updated_at"
+		},
+		"Sale8_detail": {
+			"column_name": "is_deleted",
+			"provider_type": "is_deleted"
+		}
+	},
+	"bucket_path": {
+		"path": {
+			"bucket": "air-product-training-datalake",
+			"folder_for_csv": "hashim-yousaf/landing-data/",
+			"folder_for_json": "test_data/json/",
+			"folder_for_xml": "test_data/xml/"
+		}
+	}
+}

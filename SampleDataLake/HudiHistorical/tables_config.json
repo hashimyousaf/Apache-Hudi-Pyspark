@@ -1,0 +1,18 @@
+{
+  "Tables": {
+    "sales":{
+      "last_processed_batch": -1,
+      "hoodie.upsert.shuffle.parallelism":2,
+      "hoodie.insert.shuffle.parallelism":2,
+      "hoodie.datasource.write.precombine.field":"sales_id",
+      "hoodie.datasource.write.recordkey.field": "sales_id"
+    },
+    "customers":{
+      "last_processed_batch": -1,
+      "hoodie.upsert.shuffle.parallelism":2,
+      "hoodie.insert.shuffle.parallelism":2,
+      "hoodie.datasource.write.precombine.field":"customer_id",
+      "hoodie.datasource.write.recordkey.field": "customer_id"
+    }
+  }
+}

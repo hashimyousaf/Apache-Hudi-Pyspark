@@ -1,0 +1,56 @@
+----------------------------------
+ Data Generation has been started
+
+----------------------------------
+ Data Generation is in progress...
+
+----------------------------------
+ Following files are being created
+
+Employee20200414-071502.csv
+----------------------------------
+ Process Completed
+
+----------------------------------
+ Data Generation has been started
+
+----------------------------------
+ Data Generation is in progress...
+
+----------------------------------
+ Following files are being created
+
+Customers_4b1688b2-30c7-41f0-844b-eb3a6bdbcace_20200420-080004.csv
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/boto3/s3/transfer.py", line 279, in upload_file
+    future.result()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/s3transfer/upload.py", line 692, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/botocore/client.py", line 626, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/data_generator.py", line 107, in <module>
+    generate_dummy_data(1, 100000, 1, 50000, entity, batch, is_json_required=False, is_xml_required=False)
+  File "/home/ubuntu/data_generator.py", line 77, in generate_dummy_data
+    upload_file_on_s3(csv_file_name, file_type='csv', batch=batch + '/', table_name=table_name.lower() + '/')
+  File "/home/ubuntu/helpermethods.py", line 150, in upload_file_on_s3
+    s3_detail[0], s3_detail[1]+batch+table_name+file)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/boto3/s3/inject.py", line 131, in upload_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/boto3/s3/transfer.py", line 287, in upload_file
+    filename, '/'.join([bucket, key]), e))
+boto3.exceptions.S3UploadFailedError: Failed to upload Customers_4b1688b2-30c7-41f0-844b-eb3a6bdbcace_20200420-080004.csv to air-product-training-datalake/hashim-yousaf/landing-data/2020-04-20 08:00:04.952744/customers/Customers_4b1688b2-30c7-41f0-844b-eb3a6bdbcace_20200420-080004.csv: An error occurred (ExpiredToken) when calling the PutObject operation: The provided token has expired.

@@ -1,0 +1,117 @@
+{
+  "StartAt": "Should_Create_Cluster",
+  "States": {
+    "Should_Create_Cluster": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.CreateCluster",
+          "BooleanEquals": true,
+          "Next": "Create_A_Cluster"
+        },
+        {
+          "Variable": "$.CreateCluster",
+          "BooleanEquals": false,
+          "Next": "Wait_Fot_10_Secs"
+        }
+      ],
+      "Default": "Create_A_Cluster"
+    },
+    "Wait_Fot_10_Secs": {
+      "Type": "Wait",
+      "Seconds" : 10,
+      "Next": "Bootstrap_Step"
+    },
+    "Create_A_Cluster": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::elasticmapreduce:createCluster.sync",
+      "Parameters": {
+        "Name": "WorkflowCluster",
+        "VisibleToAllUsers": true,
+        "ReleaseLabel": "emr-5.28.0",
+        "Applications": [
+          {"Name": "Hive"},
+          {"Name": "Spark"},
+          {"Name": "Presto"},
+          {"Name": "Ganglia"}
+        ],
+        "ServiceRole": "EMR_DefaultRole",
+        "JobFlowRole": "EMR_EC2_DefaultRole",
+        "LogUri": "s3://aws-logs-123412341234-eu-west-1/elasticmapreduce/",
+        "Instances": {
+          "Ec2KeyName" : "hash-ap-key-pair",
+          "KeepJobFlowAliveWhenNoSteps": true,
+          "InstanceFleets": [
+            {
+              "InstanceFleetType": "MASTER",
+              "TargetOnDemandCapacity": 1,
+              "InstanceTypeConfigs": [
+                {
+                  "InstanceType": "m5.xlarge"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "ResultPath": "$.CreateClusterResult",
+      "Next": "Bootstrap_Step"
+    },
+    "Bootstrap_Step" : {
+      "Type":"Task",
+      "Resource":"arn:aws:states:::elasticmapreduce:addStep.sync",
+      "Parameters": {
+        "ClusterId.$": "$.ClusterId",
+        "Step": {
+          "Name": "Bootstrap Action step",
+          "ActionOnFailure": "CONTINUE",
+          "HadoopJarStep": {
+            "Jar": "script-runner.jar",
+            "Args": [
+              "s3://air-product-training-datalake/hashim-yousaf/code/emr_bootstrap.sh"
+            ]
+          }
+        }
+      },
+      "Next": "Merge_Results",
+      "ResultPath" : "$"
+    },
+    "Merge_Results": {
+      "Type": "Pass",
+      "Parameters": {
+        "CreateCluster.$": "$.CreateCluster",
+        "TerminateCluster.$": "$.TerminateCluster",
+        "ClusterId.$": "$.ClusterId"
+      },
+      "Next": "Should_Terminate_Cluster"
+    },
+    "Should_Terminate_Cluster": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.TerminateCluster",
+          "BooleanEquals": true,
+          "Next": "Terminate_Cluster"
+        },
+        {
+          "Variable": "$.TerminateCluster",
+          "BooleanEquals": false,
+          "Next": "Wrapping_Up"
+        }
+      ],
+      "Default": "Wrapping_Up"
+    },
+    "Terminate_Cluster": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::elasticmapreduce:terminateCluster.sync",
+      "Parameters": {
+        "ClusterId.$": "$.ClusterId"
+      },
+      "Next": "Wrapping_Up"
+    },
+    "Wrapping_Up": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}
